@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELCOME</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            animation: pageLoad 1s ease-in-out forwards;
+        }
+        @keyframes pageLoad {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        .background-image {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: url(back.jpg) no-repeat center center/cover;
+            z-index: -1;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        .heading {
+            position: absolute;
+            top: 20px;
+            width: 100%;
+            text-align: center;
+            font-size: 64px;
+            color: rgb(255, 255, 255);
+            text-shadow: 3px 3px 6px rgb(255, 0, 0);
+            animation: slideDown 1.5s ease-in-out;
+            font-family: 'Times New Roman', Times, serif;
+            letter-spacing: 2px;
+        }
+        @keyframes slideDown {
+            0% { transform: translateY(-100px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+        .link-box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            animation: slideIn 1.5s ease-in-out;
+        }
+        @keyframes slideIn {
+            0% { transform: translate(-50%, -100%); opacity: 0; }
+            100% { transform: translate(-50%, -50%); opacity: 1; }
+        }
+        .link-box a {
+            text-decoration: none;
+            color: #0008ff;
+            font-size: 24px;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+        .link-box a:hover {
+            color: #00ff37;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="heading">The Groomers Academy Revival Campus</div>
+    <div class="link-box">
+        <a href="/Home.html">Go To The Groomers Academy Revival Campus </a>
+    </div>
+
+</body>
+</html>
